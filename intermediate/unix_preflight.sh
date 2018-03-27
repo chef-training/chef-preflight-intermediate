@@ -31,13 +31,8 @@ fi
 
 # Can I reach these Internet sites
 sites=(\
-  google.com \
   aws.amazon.com \
-  cloud.google.com \
-  rackspace.com \
-  azure.microsoft.com \
   manage.chef.io \
-  use.cloudshare.com \
   supermarket.chef.io \
   api.chef.io \
   rubygems.org \
@@ -46,7 +41,7 @@ sites=(\
 
 urls=(\
   https:\/\/downloads.chef.io\/chef-dk\/ \
-  https:\/\/github.com\/chef-training\/chef-intermediate-repo\/
+  https:\/\/github.com\/chef-training\/chef-intermediate-repo/
 )
 
 echo
