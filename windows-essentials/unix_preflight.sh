@@ -46,7 +46,7 @@ sites=(\
 
 urls=(\
   https:\/\/downloads.chef.io\/chef-dk\/ \
-
+  https:\/\/github.com\/chef-training\/chef-essentials-windows-repo\/
 )
 
 echo
