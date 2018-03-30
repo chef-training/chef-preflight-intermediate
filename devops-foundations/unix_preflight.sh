@@ -44,8 +44,8 @@ sites=(\
 
 urls=(\
   https:\/\/downloads.chef.io\/chef-dk\/ \
-  https:\/\/github.com\/SamMc87\/myiis\/ \
-  https:\/\/github.com\/SamMc87\/apache\/
+  https:\/\/github.com\/SamMc87\/ \
+  https:\/\/github.com\/SamMc87/
 )
 
 echo
