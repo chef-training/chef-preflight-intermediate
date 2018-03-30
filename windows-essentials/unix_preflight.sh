@@ -7,6 +7,9 @@
 # CentOS:  bind-utils, nc
 # Ubuntu:  dnsutils, netcat
 
+# set file name for output as preflight_results_TIMESTAMP.txt
+results_file="preflight_results_`date +%Y-%m-%d-%H%M%S`".txt
+
 # Set these for colorized output
 red=$(tput setaf 1)
 green=$(tput setaf 2)
@@ -23,9 +26,9 @@ echo
 echo "###############################################################################"
 col=40
 if [ "$hazadmin" == "true" ]; then
-  printf '%-50s%*s%s\n' "Checking sudo rights..." $col "${green}[OK]${normal}"
+  printf '%-50s%*s%s\n' "Checking sudo rights..." $col "${green}[OK]${normal}" | tee -a $results_file
 else
-  printf '%-50s%*s%s\n' "Checking sudo rights..." $col "${red}[FAIL]${normal}"
+  printf '%-50s%*s%s\n' "Checking sudo rights..." $col "${red}[FAIL]${normal}" | tee -a $results_file
 fi
 
 
@@ -53,9 +56,9 @@ for site in ${sites[*]}; do
   #dig $site 2>&1 >/dev/null
   dig $site | grep -v SERVER | grep -q -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
   if [ $? -eq 0 ]; then
-    printf '%-50s%*s%s\n' "Checking DNS for $site" $col "${green}[OK]${normal}"
+    printf '%-50s%*s%s\n' "Checking DNS for $site" $col "${green}[OK]${normal}" | tee -a $results_file
   else
-    printf '%-50s%*s%s\n' "Checking DNS for $site" $col "${red}[FAIL]${normal}"
+    printf '%-50s%*s%s\n' "Checking DNS for $site" $col "${red}[FAIL]${normal}" | tee -a $results_file
   fi
 done
 
@@ -68,9 +71,9 @@ col=40
 for site in ${sites[*]}; do
   curl -s $site 2>&1 >/dev/null
   if [ $? -eq 0 ]; then
-    printf '%-50s%*s%s\n' "Checking $site" $col "${green}[OK]${normal}"
+    printf '%-50s%*s%s\n' "Checking $site" $col "${green}[OK]${normal}" | tee -a $results_file
   else
-    printf '%-50s%*s%s\n' "Checking $site" $col "${red}[FAIL]${normal}"
+    printf '%-50s%*s%s\n' "Checking $site" $col "${red}[FAIL]${normal}" | tee -a $results_file
   fi
 done
 
@@ -78,9 +81,9 @@ col=40
 for url in ${urls[*]}; do
   curl -s $url 2>&1 >/dev/null
   if [ $? -eq 0 ]; then
-    printf '%-50s%*s%s\n' "Checking $url" $col "${green}[OK]${normal}"
+    printf '%-50s%*s%s\n' "Checking $url" $col "${green}[OK]${normal}" | tee -a $results_file
   else
-    printf '%-50s%*s%s\n' "Checking $url" $col "${red}[FAIL]${normal}"
+    printf '%-50s%*s%s\n' "Checking $url" $col "${red}[FAIL]${normal}" | tee -a $results_file
   fi
 done
 
@@ -101,9 +104,9 @@ col=40
 for port in ${ports[*]}; do
   nc -w 1 portquiz.net $port 2>&1 >/dev/null
   if [ $? -eq 0 ]; then
-    printf '%-50s%*s%s\n' "Checking port $port" $col "${green}[OK]${normal}"
+    printf '%-50s%*s%s\n' "Checking port $port" $col "${green}[OK]${normal}" | tee -a $results_file
   else
-    printf '%-50s%*s%s\n' "Checking port $port" $col "${red}[FAIL]${normal}"
+    printf '%-50s%*s%s\n' "Checking port $port" $col "${red}[FAIL]${normal}" | tee -a $results_file
   fi
 done
 
