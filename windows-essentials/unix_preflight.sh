@@ -8,7 +8,7 @@
 # Ubuntu:  dnsutils, netcat
 
 # set file name for output as preflight_results_TIMESTAMP.txt
-results_file="preflight_results_`date +%Y-%m-%d-%H%M%S`".txt
+results_file="${USER}_`date +%Y-%m-%d-%H%M%S`_preflight_results".txt
 
 # Set these for colorized output
 red=$(tput setaf 1)
