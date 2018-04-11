@@ -7,23 +7,17 @@ $outputfile = "$env:username" +"_" + "$current_time" + "_results.csv"
 $results = @()
 
 $sites = @(
-	'google.com',
-	'aws.amazon.com',
-	'cloud.google.com',
-	'rackspace.com',
-	'azure.microsoft.com',
- 	'manage.chef.io',
-	'use.cloudshare.com',
-	'supermarket.chef.io',
-	'api.chef.io',
-	'rubygems.org',
-	'portquiz.net'
+  aws.amazon.com,
+  manage.chef.io,
+  supermarket.chef.io,
+  api.chef.io,
+  rubygems.org,
+  portquiz.net
 )
 
 $urls = @(
 	'https://downloads.chef.io/chef-dk/',
-	'https://www.virtualbox.org/wiki/Downloads',
-	'https://www.vagrantup.com/downloads.html'
+	'https://github.com/chef-training/
 )
 
 $ports = @(
