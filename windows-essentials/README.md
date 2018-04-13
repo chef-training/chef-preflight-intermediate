@@ -47,8 +47,8 @@ Running the script will then generate a report of the network connectivity (pref
 1. download or clone the chef-preflight repository locally
 1. open term or shell
 1. navigate to the chef-preflight/windows-essentials folder
- -  execute `./osx_preflight.sh` on a mac   
- -  execute `./unix_preflight.sh` on linux
+  - execute `./osx_preflight.sh` on a mac   
+  - execute `./unix_preflight.sh` on linux
 1. forward our team the results
 1. address any issues
 
