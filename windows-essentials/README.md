@@ -70,7 +70,7 @@ Alternatively:
 
   * You will want to run the executable from within the same environment (such as from within the classroom or on the same network) as we'll be using in class.  
 
-4. Forward the generated “preflight_results.txt” file back to our team.
+4. Forward the generated “preflight_results.csv” file back to our team.
 
 *Our team will review the results of the Pre-flight script and Please let me know if you need any further assistance with this. We are happy to help.*
 
