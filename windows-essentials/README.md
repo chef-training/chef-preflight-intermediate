@@ -19,7 +19,7 @@ Verify web connectivity to:
 * downloads.chef.io/chef-dk
 * github.com/chef-training
 
-Verify SSH and/or RDP connectivity:
+Verify RDP connectivity:
 * Outbound to AWS
 
 ### Network Requirements
