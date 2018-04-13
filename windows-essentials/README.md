@@ -34,21 +34,21 @@ Running the script will then generate a report of the network connectivity (pref
 
 ## On Windows
 1. download or clone the chef-preflight repository locally
-1. open powershell as administrator
-1. navigate to the chef-preflight/windows-essentials folder
-1. execute `./windows_preflight.ps1`
-1. execute `./http_preflight.ps1`
-1. forward the preflight_results file to our team
-1. address any issues
+2. open powershell as administrator
+3. navigate to the chef-preflight/windows-essentials folder
+4. execute `./windows_preflight.ps1`
+5. execute `./http_preflight.ps1`
+6. forward the preflight_results file to our team
+7. address any issues
 
 ## On Linux/OSX
 1. download or clone the chef-preflight repository locally
-1. open term or shell
-1. navigate to the chef-preflight/windows-essentials folder
+2. open term or shell
+3. navigate to the chef-preflight/windows-essentials folder
   * execute `./osx_preflight.sh` on a mac   
   * execute `./unix_preflight.sh` on linux
-1. forward the preflight_results file to our team
-1. address any issues
+4. forward the preflight_results file to our team
+5. address any issues
 
 # Execution Example
 
@@ -60,17 +60,17 @@ Alternatively:
 
 1. Open a Powershell prompt. This can be done easily by using the keystroke ( WINDOWS + X + A ), or by opening the start menu ( WINDOWS ) and searching for “powershell”.
 
-1. Navigate to the location where you downloaded the scripts to. This will most likely be your downloads directory. You can change into this directory by running the following inside of your powershell prompt:
+2. Navigate to the location where you downloaded the scripts to. This will most likely be your downloads directory. You can change into this directory by running the following inside of your powershell prompt:
 
   * cd ~\Downloads\
 
-1. And then execute the script located inside of: chef-preflight-master -> windows-essentials -> windows_preflight.ps1
+3. And then execute the script located inside of: chef-preflight-master -> windows-essentials -> windows_preflight.ps1
 
   * .\chef-preflight-master\windows-essentials\windows_preflight.ps1
 
   * You will want to run the executable from within the same environment (such as from within the classroom or on the same network) as we'll be using in class.  
 
-1. Forward the generated “preflight_results.txt” file back to our team.
+4. Forward the generated “preflight_results.txt” file back to our team.
 
 *Our team will review the results of the Pre-flight script and Please let me know if you need any further assistance with this. We are happy to help.*
 
