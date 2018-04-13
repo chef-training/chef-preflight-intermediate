@@ -7,18 +7,21 @@ $outputfile = "$env:username" +"_" + "$current_time" + "_results.csv"
 $results = @()
 
 $sites = @(
-  aws.amazon.com,
-  manage.chef.io,
-  supermarket.chef.io,
-  api.chef.io,
-  rubygems.org,
-  portquiz.net
+  'aws.amazon.com',
+  'manage.chef.io',
+  'supermarket.chef.io',
+  'api.chef.io',
+  'rubygems.org',
+  'portquiz.net'
 )
 
 $urls = @(
-	'https://downloads.chef.io/chef-dk/',
-	'https://github.com/chef-training/
+	'https://downloads.chef.io/chef-dk',
+	'https://github.com/chef-training'
 )
+
+#Enable TLS1.2 for session to allow SSL sites to download strings
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 $ports = @(
 	@{endpoint = 'portquiz.net'; protocol = 'HTTP'; port = 80},
