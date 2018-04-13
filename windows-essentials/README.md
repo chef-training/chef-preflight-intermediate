@@ -2,9 +2,7 @@
 
 We are going to verify that attendees are setup properly, and the facilities will not cause issues. 
 
-# What do the scripts do?
-
-Workstation Requirements:
+## What do the scripts do?
 
 * Do the users have local admin rights to install items to their systems?
   * If not, can they be granted?
@@ -24,9 +22,9 @@ Verify web connectivity to:
 Verify SSH and/or RDP connectivity:
 * Outbound to AWS
 
-# General Requirements
+### Network Requirements
 
-Outbound requirements:  ports 3389 (RDP) and 5985 (WinRM), * .chef.io, * .aws.amazon.com, and if possible, drive.google.com
+Outbound: ports 3389 (RDP) and 5985 (WinRM), * .chef.io, * .aws.amazon.com, and if possible, drive.google.com
 
 We ask that you run the "pre-flight" script that Chef has put together and return the results to us in a timely fashion. To do this, please connect a typical laptop a student might be using to the network we will be utilizing for the class. 
 
@@ -34,22 +32,22 @@ Running the script will then generate a report of the network connectivity (pref
 
 # Instructions
 
-# On Windows
+## On Windows
 1. download or clone the chef-preflight repository locally
 1. open powershell as administrator
 1. navigate to the chef-preflight/windows-essentials folder
 1. execute `./windows_preflight.ps1`
 1. execute `./http_preflight.ps1`
-1. forward our team the results
+1. forward the preflight_results file to our team
 1. address any issues
 
-# On Linux/OSX
+## On Linux/OSX
 1. download or clone the chef-preflight repository locally
 1. open term or shell
 1. navigate to the chef-preflight/windows-essentials folder
-  - execute `./osx_preflight.sh` on a mac   
-  - execute `./unix_preflight.sh` on linux
-1. forward our team the results
+  * execute `./osx_preflight.sh` on a mac   
+  * execute `./unix_preflight.sh` on linux
+1. forward the preflight_results file to our team
 1. address any issues
 
 # Execution Example
@@ -64,16 +62,16 @@ Alternatively:
 
 1. Navigate to the location where you downloaded the scripts to. This will most likely be your downloads directory. You can change into this directory by running the following inside of your powershell prompt:
 
-cd ~\Downloads\
+  * cd ~\Downloads\
 
 1. And then execute the script located inside of: chef-preflight-master -> windows-essentials -> windows_preflight.ps1
 
-.\chef-preflight-master\windows-essentials\windows_preflight.ps1
+  * .\chef-preflight-master\windows-essentials\windows_preflight.ps1
 
-You will want to run the executable from within the same environment (such as from within the classroom or on the same network) as we'll be using in class.  
+  * You will want to run the executable from within the same environment (such as from within the classroom or on the same network) as we'll be using in class.  
 
 1. Forward the generated “preflight_results.txt” file back to our team.
 
-Our team will review the results of the Pre-flight script and Please let me know if you need any further assistance with this. We are happy to help. 
+*Our team will review the results of the Pre-flight script and Please let me know if you need any further assistance with this. We are happy to help.*
 
-We’re looking forward to working with you and your team!
+*We’re looking forward to working with you and your team!*
