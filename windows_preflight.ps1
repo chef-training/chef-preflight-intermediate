@@ -19,6 +19,9 @@ $urls = @(
 	'https://github.com/chef-training'
 )
 
+#Enable TLS1.2 for session to allow SSL sites to download strings
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 $ports = @(
 	@{endpoint = 'portquiz.net'; protocol = 'HTTP'; port = 80},
 	@{endpoint = 'portquiz.net'; protocol = 'HTTPS'; port = 443},
