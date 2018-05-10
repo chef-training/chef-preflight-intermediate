@@ -1,9 +1,8 @@
 ﻿#Powershell pre-flight Check
 
 #Parameters
-$current_time = Get-Date -format u
-$current_time = $current_time.split(" ")[0]
-$outputfile = "$env:username" +"_" + "$current_time" + "_results.csv"
+$current_time = Get-Date -format "yyyy-MM-dd-HHmmss"
+$outputfile = "$env:username" +"_" + "$current_time" + "_preflight_results.csv"
 $results = @()
 
 $sites = @(
