@@ -33,18 +33,18 @@ Running the script will then generate a report of the network connectivity (pref
 # Instructions
 
 ## On Windows
-1. download or clone the chef-preflight-unix-essentials repository locally
+1. download or clone the chef-preflight-intermediate repository locally
 2. open powershell as administrator
-3. navigate to the chef-preflight-unix-essentials folder
+3. navigate to the chef-preflight-intermediate folder
 4. execute `./windows_preflight.ps1`
 5. execute `./http_preflight.ps1`
 6. forward the preflight_results file to our team
 7. address any issues
 
 ## On Linux/OSX
-1. download or clone the chef-preflight-unix-essentials repository locally
+1. download or clone the chef-preflight-intermediate repository locally
 2. open term or shell
-3. navigate to the chef-preflight-unix-essentials folder
+3. navigate to the chef-preflight-intermediate folder
   * execute `./osx_preflight.sh` on a mac   
   * execute `./unix_preflight.sh` on linux
 4. forward the preflight_results file to our team
@@ -52,7 +52,7 @@ Running the script will then generate a report of the network connectivity (pref
 
 # Execution Example
 
-If we assume a Windows workstation, then for Chef Essentials on Unix course:
+If we assume a Windows workstation, then for Chef Intermediate course:
 
 The simplest method is to navigate to the downloaded scripts in Windows Explorer (launched with WINDOWS + E ), right-clicking on the appropriate script, and clicking “Run with PowerShell”. You will need to give administrative access for the script to complete properly.
 
@@ -64,9 +64,9 @@ Alternatively:
 
   * cd ~\Downloads\
 
-3. And then execute the script located inside of: chef-preflight-unix-essentials -> windows_preflight.ps1
+3. And then execute the script located inside of: chef-preflight-intermediate -> windows_preflight.ps1
 
-  * .\chef-preflight-unix-essentials\windows_preflight.ps1
+  * .\chef-preflight-intermediate\windows_preflight.ps1
 
   * You will want to run the executable from within the same environment (such as from within the classroom or on the same network) as we'll be using in class.  
 
