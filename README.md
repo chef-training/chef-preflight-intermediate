@@ -1,4 +1,4 @@
-# Chef Essentials on Unix Training Pre-flight
+# Chef Intermediate Training Pre-flight
 
 We are going to verify that attendees are setup properly, and the facilities will not cause issues. 
 
